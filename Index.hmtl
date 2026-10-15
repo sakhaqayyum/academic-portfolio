@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sakha | Academic Portfolio & PhD Research Profile</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            DEFAULT: '#0f172a',
+                            card: '#1e293b',
+                            border: '#334155'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        code, pre {
+            font-family: 'Fira Code', monospace;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Mobile-First Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-bold text-base sm:text-lg tracking-tight bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent truncate max-w-[200px]">
+                Sakha.research()
+            </a>
+            <div class="flex items-center space-x-3">
+                <a href="#contact" class="px-3 py-1.5 text-xs font-medium rounded-lg bg-blue-600 hover:bg-blue-500 text-white transition shadow-md shadow-blue-500/20 md:hidden">
+                    Inquire
+                </a>
+                <button id="mobile-menu-btn" class="p-2 text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Collapsible Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-3 pb-5 space-y-3 bg-slate-900/95 border-b border-slate-800 backdrop-blur-lg">
+            <a href="#about" class="block py-2 text-sm text-slate-300 hover:text-blue-400 font-medium border-b border-slate-800/50">About & Objectives</a>
+            <a href="#research" class="block py-2 text-sm text-slate-300 hover:text-blue-400 font-medium border-b border-slate-800/50">Research Focus</a>
+            <a href="#publications" class="block py-2 text-sm text-slate-300 hover:text-blue-400 font-medium border-b border-slate-800/50">Publications & Theses</a>
+            <a href="#experience" class="block py-2 text-sm text-slate-300 hover:text-blue-400 font-medium border-b border-slate-800/50">Academic Experience</a>
+            <a href="#skills" class="block py-2 text-sm text-slate-300 hover:text-blue-400 font-medium border-b border-slate-800/50">Skills & Languages</a>
+            <a href="#contact" class="block py-2 text-sm text-blue-400 font-semibold">Contact & Inquiries</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container (Optimized for Mobile Spacing) -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 space-y-16">
+
+        <!-- Hero Section -->
+        <section id="hero" class="space-y-6 pt-4">
+            <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-blue-950/90 border border-blue-800/60 text-blue-400 text-xs font-medium">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse shrink-0"></span>
+                <span class="truncate">Seeking PhD in Software Engineering, LLMs, Gen AI, Continuous Learning or Cybersecurity</span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Advancing Reliable <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">AI & Software Security</span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+                M.S. in Software Engineering graduate, former Lecturer, and Researcher specializing in Deep Learning, Multi-Agent Systems, Code Clone Analysis, Continuous Learning and Secure AI architectures. Based in Mülheim an der Ruhr, Germany.
+            </p>
+
+            <!-- Quick Profile Card (Mobile First Display) -->
+            <div class="glass p-5 rounded-2xl border border-slate-800 shadow-xl space-y-4 my-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-xl font-bold text-white shadow-inner shrink-0">
+                        S
+                    </div>
+                    <div class="min-w-0">
+                        <h2 class="text-lg font-bold text-white truncate">Sakha</h2>
+                        <p class="text-xs sm:text-sm text-blue-400 truncate">Software Engineer & Researcher</p>
+                        <p class="text-xs text-slate-400 mt-0.5 truncate"><i class="fa-solid fa-location-dot mr-1"></i> Mülheim an der Ruhr, Germany</p>
+                    </div>
+                </div>
+                <hr class="border-slate-800/80">
+                <div class="grid grid-cols-1 gap-2 text-xs sm:text-sm">
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-400">Email:</span>
+                        <a href="mailto:sakhaqayyum@gmail.com" class="text-blue-400 hover:underline truncate ml-2">sakhaqayyum@gmail.com</a>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-400">English Proficiency:</span>
+                        <span class="text-slate-200 font-medium">IELTS 6.5 Bands</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-400">German Language:</span>
+                        <span class="text-slate-200 font-medium">A2 Level (Self-Studied)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-slate-400">LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/sakha-saha-b140a815a/" target="_blank" class="text-blue-400 hover:underline">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <a href="#contact" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 font-semibold text-white transition text-center shadow-lg shadow-blue-600/20 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Inquire for PhD / Position</span>
+                </a>
+                <a href="#publications" class="w-full sm:w-auto px-6 py-3 rounded-xl glass hover:bg-slate-800 font-semibold text-slate-200 transition text-center border border-slate-700 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>View Publications</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Academic Focus & Overview -->
+        <section id="about" class="space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center space-x-2">
+                    <i class="fa-solid fa-graduation-cap text-blue-400"></i>
+                    <span>Academic Summary & PhD Objectives</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Bridging rigorous software engineering methodologies with foundational artificial intelligence research.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="w-9 h-9 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-sm">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-base font-semibold text-white">Gen AI & Multi-Agent Systems</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Designing intelligent multi-agent frameworks for autonomous decision-making, Scrum process automation, and collaborative task orchestration using NLP and requirement extraction.
+                    </p>
+                </div>
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="w-9 h-9 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-base font-semibold text-white">Cybersecurity & Threat Detection</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Applying deep learning models (CNN-LSTM-Attention architectures) to large-scale security datasets for URL phishing classification, malware analysis, and temporal threat prediction.
+                    </p>
+                </div>
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="w-9 h-9 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold text-sm">
+                        <i class="fa-solid fa-code-merge"></i>
+                    </div>
+                    <h3 class="text-base font-semibold text-white">Software Quality & Code Clone Analysis</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Leveraging lexical analysis, tokenization, graph parsing, and 1D-CNNs for automated code clone detection, software maintenance, and static program analysis.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Focus & Target Areas -->
+        <section id="research" class="space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center space-x-2">
+                    <i class="fa-solid fa-atom text-blue-400"></i>
+                    <span>Core Research Domains</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Specialized fields aligned with prospective doctoral research projects.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-base font-semibold text-white flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-blue-400 shrink-0"></span>
+                        <span>Large Language Models & AI Systems</span>
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Active research interest in LLM integration, prompt validation, AI-assisted software testing frameworks, and conversational agent reliability. Experienced in testing AI-enabled platforms, prompt-based workflows, and automated service validation.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">LLM Testing</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">Prompt Engineering</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">Generative AI QA</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">AI Trustworthiness</span>
+                    </div>
+                </div>
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-base font-semibold text-white flex items-center space-x-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-400 shrink-0"></span>
+                        <span>Agentic AI & Automated Workflows</span>
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Extensive background in multi-agent frameworks, autonomous software agents for task allocation, knowledge extraction from Software Requirement Specification (SRS) documents, and intelligent Scrum process management.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">Multi-Agent Systems</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">NLP & Entity Extraction</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">Decision Support Systems</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-700 text-[11px] text-slate-300">Agile Automation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications & Theses -->
+        <section id="publications" class="space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center space-x-2">
+                    <i class="fa-solid fa-book-bookmark text-blue-400"></i>
+                    <span>Theses & Peer-Reviewed Publications</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Documented research contributions and academic milestones.</p>
+            </div>
+            <div class="space-y-4">
+                <!-- Master's Thesis -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="space-y-1">
+                        <h3 class="text-base font-bold text-white leading-snug">Master's Thesis: Code Clone Analysis and Detection for Software Quality Assurance Using Convolutional Neural Networks (CNN)</h3>
+                        <div class="text-[11px] font-mono text-blue-400 px-2.5 py-1 rounded bg-blue-950/60 border border-blue-800/50 inline-block">Feb 2021 – Mar 2023 | COMSATS University Islamabad</div>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Employed the BigCloneBench benchmark dataset for training and evaluation. Performed lexical analysis, tokenization, parsing, and code fragment extraction to identify syntactic similarities. Developed a one-dimensional Convolutional Neural Network (1D-CNN) to automatically learn discriminative features from tokenized source code, significantly improving clone detection accuracy and software quality assurance metrics compared to conventional machine learning algorithms.
+                    </p>
+                </div>
+
+                <!-- Conference Publication -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <div class="space-y-1">
+                        <h3 class="text-base font-bold text-white leading-snug">Conference Publication: Multi-Agent System Using Scrum Methodology for Software Process Management</h3>
+                        <div class="text-[11px] font-mono text-indigo-400 px-2.5 py-1 rounded bg-indigo-950/60 border border-indigo-800/50 inline-block">INTAP 2019 | Springer, Singapore, pp. 787–792</div>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Published research presenting an intelligent desktop-based multi-agent system automating project planning, task allocation, and team coordination using NLP-based Software Requirements Specification (SRS) analysis. Awarded <strong>Best Final Year Project</strong> at the Punjab IT/Innovation Summit 2019.
+                    </p>
+                </div>
+
+                <!-- Research Support & Experience Summary -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-base font-bold text-white">Advanced Research Support & Faculty Collaborations</h3>
+                    <ul class="list-disc list-inside text-xs sm:text-sm text-slate-300 space-y-2 leading-relaxed">
+                        <li><strong>Terrorist Attack Prediction:</strong> Contributed to hybrid CNN-LSTM-Attention architecture modeling on ~190,000 records from the Global Terrorism Database (GTD) for temporal threat forecasting.</li>
+                        <li><strong>Transfer Learning Crowd Counting:</strong> Assisted in designing multi-head CNN architectures for density estimation and crowd counting across ShanghaiTech and UCF datasets.</li>
+                        <li><strong>Deep Learning Phishing Detection:</strong> Implemented 1D-CNN models processing over 400,000 URLs from PhishTank and UNB datasets for high-precision phishing classification.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic & Professional Experience -->
+        <section id="experience" class="space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center space-x-2">
+                    <i class="fa-solid fa-briefcase text-blue-400"></i>
+                    <span>Academic & Professional Experience</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Teaching, research mentorship, and industrial software engineering background.</p>
+            </div>
+            <div class="space-y-4">
+                <!-- Lecturer -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-base font-bold text-white">Lecturer, Dept. of Computer Science</h3>
+                        <span class="text-[11px] font-mono text-slate-400">Sep 2023 – Dec 2024</span>
+                    </div>
+                    <p class="text-[11px] text-blue-400 font-medium">Member IEEE (2023–2024)</p>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Delivered undergraduate courses including Artificial Intelligence, Machine Learning, Data Analytics, and Data Structures under Outcome-Based Education (OBE) standards. Supervised multidisciplinary capstone projects, including federally/HEC-funded AI healthcare platforms and intelligent LMS solutions.
+                    </p>
+                </div>
+
+                <!-- Teaching & Research Assistant -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-base font-bold text-white">Teaching & Research Assistant (Remote, Saudi Arabia)</h3>
+                        <span class="text-[11px] font-mono text-slate-400">Mar 2023 – Sep 2023</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Supported faculty members in AI, Machine Learning, and Cybersecurity curriculum development (designing 32 lecture modules and over 100 hands-on Python lab exercises). Contributed to experimental design, statistical evaluation, and manuscript preparation for international journals.
+                    </p>
+                </div>
+
+                <!-- Automation QA Engineer -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-base font-bold text-white">Automation Quality Assurance Engineer (Remote, Canada)</h3>
+                        <span class="text-[11px] font-mono text-slate-400">Jan 2025 – Jan 2026</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Engineered automated test frameworks for enterprise web and mobile applications using Selenium, Cypress, Appium, Python, and Java. Conducted API validation (Postman), performance/load testing (Jmeter), CI/CD pipeline integration (Jenkins), and rigorous testing of AI-enabled features and chatbot workflows.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills & Languages -->
+        <section id="skills" class="space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center space-x-2">
+                    <i class="fa-solid fa-code text-blue-400"></i>
+                    <span>Technical Proficiencies & Qualifications</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Programming languages, tools, frameworks, and language proficiencies.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Programming & Frameworks -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+                        <i class="fa-solid fa-terminal text-blue-400"></i>
+                        <span>Programming & ML</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Python</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Java</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">TensorFlow</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Keras</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Scikit-learn</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">SQL</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">NLP / Tokenization</span>
+                    </div>
+                </div>
+
+                <!-- Testing & Automation -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+                        <i class="fa-solid fa-vial text-indigo-400"></i>
+                        <span>Testing & CI/CD</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Selenium WebDriver</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Cypress</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Appium</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">PyTest / TestNG</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Apache JMeter</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Postman / REST APIs</span>
+                        <span class="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-xs text-slate-200">Jenkins CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- Languages & Qualifications -->
+                <div class="glass p-5 rounded-2xl border border-slate-800 space-y-3">
+                    <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+                        <i class="fa-solid fa-language text-purple-400"></i>
+                        <span>Languages & Exams</span>
+                    </h3>
+                    <div class="space-y-2 text-xs sm:text-sm">
+                        <div class="flex justify-between items-center bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                            <span class="text-slate-300">English (IELTS)</span>
+                            <span class="font-bold text-blue-400">6.5 Bands</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-900 p-2.5 rounded-lg border border-slate-800">
+                            <span class="text-slate-300">German Language</span>
+                            <span class="font-bold text-indigo-400">A2 Level (Self-Studied)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="space-y-6">
+            <div class="border-b border-slate-800 pb-3">
+                <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center space-x-2">
+                    <i class="fa-solid fa-paper-plane text-blue-400"></i>
+                    <span>Get in Touch for PhD Opportunities</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">Open for doctoral research positions, academic collaborations, and research inquiries.</p>
+            </div>
+            <div class="glass p-5 sm:p-8 rounded-2xl border border-slate-800 space-y-6">
+                <div class="space-y-3">
+                    <h3 class="text-lg font-bold text-white">Let's Connect</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        I am actively seeking PhD positions and scholarship opportunities across Europe and internationally, focusing on Large Language Models, Agentic AI Systems, and Cybersecurity. Feel free to reach out via email or connect on LinkedIn.
+                    </p>
+                    <div class="space-y-2.5 text-xs sm:text-sm pt-2">
+                        <div class="flex items-center space-x-3 text-slate-300 truncate">
+                            <i class="fa-solid fa-envelope text-blue-400 w-5 shrink-0"></i>
+                            <a href="mailto:sakhaqayyum@gmail.com" class="hover:text-blue-400 transition truncate">sakhaqayyum@gmail.com</a>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fa-solid fa-location-dot text-blue-400 w-5 shrink-0"></i>
+                            <span>Mülheim an der Ruhr, Germany</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300 truncate">
+                            <i class="fa-brands fa-linkedin text-blue-400 w-5 shrink-0"></i>
+                            <a href="https://www.linkedin.com/in/sakha-saha-b140a815a/" target="_blank" class="hover:text-blue-400 transition truncate">LinkedIn Profile</a>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300 truncate">
+                            <i class="fa-brands fa-x-twitter text-blue-400 w-5 shrink-0"></i>
+                            <a href="https://x.com/Sakha557721" target="_blank" class="hover:text-blue-400 transition truncate">X (Twitter) Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center space-y-3 bg-slate-900/80 p-4 sm:p-5 rounded-xl border border-slate-800">
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider">Quick Inquiry</h4>
+                    <p class="text-[11px] text-slate-400">Click below to initiate an email draft directly regarding PhD supervision or research collaboration.</p>
+                    <a href="mailto:sakhaqayyum@gmail.com?subject=PhD%20Research%20Inquiry%20-%20Sakha&body=Dear%20Sakha,%0D%0A%0D%0AI%20reviewed%20your%20academic%20portfolio%20and%20would%20like%20to%20discuss%20potential%20PhD%20positions..." class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 font-semibold text-white transition text-center shadow-lg shadow-blue-600/20 flex items-center justify-center space-x-2 text-sm">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <span>Send Email Message</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-8 px-4 text-center text-xs text-slate-500 space-y-2">
+        <p>&copy; 2026 Sakha. Designed for GitHub Pages & Academic Scholarship Applications.</p>
+        <p class="font-mono">M.S. Software Engineering | IELTS 6.5 | German A2</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
